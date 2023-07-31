@@ -1,0 +1,158 @@
+Questions 01
+#include <stdio.h>
+int main()
+{
+    int n01;
+    printf ("Enter the number - ");
+    scanf ("%d",&n01);
+
+    if (n01%2==0)
+    {
+        printf ("it's an even number ");
+
+    }else {
+    printf ("it's an odd number ");
+    }
+}
+
+
+
+
+Part 02
+#include <stdio.h>
+int main()
+{
+    int n02;
+    printf("Enter the number - ");
+    scanf ("%d",&n02);
+
+ switch(n02)
+    {
+        case 0:printf ("it's an even");break;
+        case 2:printf ("It's an even");break;
+        case 4:printf ("It's an even");break;
+        case 6:printf ("It's an even");break;
+        case 8:printf ("It's an even");break;
+        default:printf ("It's not an even",n02);
+    }
+
+}
+
+
+
+
+
+
+
+
+Question 02
+#include <stdio.h>
+int main ()
+{
+  int n01,n02;
+  char s;
+  float ans;
+  printf ("Enter your integer value - ");
+  scanf("%d %d",&n01,&n02);
+  printf ("Select the symbol - \n");
+  scanf(" %c",&s);
+  printf ("\n\n");
+  switch(s)
+  {
+  case '+':ans=(float)n01+(float)n02;break;
+  case '-':ans=(float)n01-(float)n02;break;
+  case '*':ans=(float)n01*(float)n02;break;
+  case '/':ans=(float)n01/(float)n02;break;
+  }
+  printf ("The answer is %f",ans);
+}
+
+
+
+
+
+
+
+Question 03
+#include <stdio.h>
+int main ()
+{
+    int r;
+    double circ,area,volume;
+    char l;
+   printf ("choose what you want to calculate in a sphere\n\n");
+    printf ("- Circumference \n");
+    printf ("- Area \n");
+    printf ("- volume \n\n");
+    scanf (" %c",&l);
+    printf ("\n\n");
+    printf ("now enter the radius \n");
+    scanf (" %d",&r);
+    printf ("\n\n");
+    circ=2*3.14*(double)r;
+    area=3.14*(double)r*(double)r,(double)r;
+    volume=(4/3)*3.14*(double)r*(double)r*(double)r;
+    switch (l)
+    {
+        case 'c':printf("the circumference is %fl",circ);break;
+        case 'a':printf("the area is %fl",area);break;
+        case 'v':printf("the volume is %fl",volume);break;
+        default:printf("please enter given value ");
+    }
+    printf ("\n\n");          }
+Question 04
+ #include <stdio.h>
+int main()
+{
+    char a;
+printf("Enter a character=");
+scanf("%c",&a);
+
+switch(a)
+{
+case 'a':printf("a is vowel");break;
+case 'e':printf("e is vowel");break;
+case 'i':printf("i is vowel");break;
+case 'o':printf("o is vowel");break;
+case 'u':printf("u is vowel");break;
+case 'A':printf("This is a vowel letter");break;
+case 'E':printf("This is a vowel letter");break;
+case 'I':printf("This is a vowel letter");break;
+case 'O':printf("This is a vowel letter");break;
+case 'U':printf("This is a vowel letter");break;
+
+default:printf("%c is not a vowel",a);
+
+}
+
+}
+
+
+Question 05
+#include <stdio.h>
+int main()
+{
+    int m;
+printf("Enter a month number=");
+scanf("%d",&m);
+switch(m)
+{
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        printf("Number days of month: 31\n");break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        printf("Number days of month: 30\n");break;
+    case 2:
+        printf("Number days of month: 28\n");break;
+    default:
+      printf("Invalid month number!");
+}
+} 
