@@ -1,0 +1,260 @@
+Q1-
+#include <stdio.h>
+int main()
+{
+
+    return 0;
+}
+
+Q2-
+#include <stdio.h>
+
+int main()
+{
+    int marks[10],total=0;
+    float avg;
+
+    for(int i=0;i<10;i++)
+    {
+        printf("Enter %d mark : ",i+1);
+        scanf("%d",&marks[i]);
+        total+= marks[i];
+    }
+    printf("Total:%d \n",total);
+    printf("Average:%.2f \n",(float)total/10);
+
+    avg=(float)total/10;
+
+    if(avg>50)
+    {
+        printf("Pass\n");
+    }
+    else
+    {
+        printf("Fail\n");
+    }
+
+    return 0;
+}
+
+Q3-
+#include <stdio.h>
+int main()
+{
+    int number,i;
+    int factorial=1;
+
+    printf("Enter a number: ");
+    scanf("%d",&number);
+        if(number<0)
+    {
+        printf("Not calculatable\n");
+    }
+    else if(number==0)
+    {
+        printf("Factorial of %d is %d \n",number,1);
+    }
+    else
+    {
+        for(i=1;i<=number;i++)
+        {
+            factorial *= i;
+        }
+          printf("Factorial of %d is %d \n",number,factorial);
+    }
+
+    return 0;
+}
+
+Q4-
+#include <stdio.h>
+int main()
+{
+     int n,reverse;
+     printf("Enter number: ");
+     scanf("%d",&n);
+    do
+    {
+       reverse=n%10;
+       printf("%d",reverse);
+       n=n/10;
+    }
+
+    while(n>0);
+    return 0;
+}
+
+Q5-
+#include <stdio.h>
+int main()
+{
+    int f,q,c=1;
+    printf("Enter a value: ");
+    scanf("%d",&f);
+    printf("Now enter the power of it: ");
+    scanf("%d",&q);
+
+    if(q==0)
+    {
+        c=1;
+    }
+    else
+    {
+        for(q;q>0;q--)
+        {
+            c=c*f;
+        }
+    }
+    printf("The answer is %d\n",c);
+    return 0;
+}
+
+
+Q6-
+#include <stdio.h>
+int main()
+{
+    int f,q,c=1;
+    printf("Enter a value: ");
+    scanf("%d",&f);
+    printf("Now enter the power of it: ");
+    scanf("%d",&q);
+
+    if(q==0)
+    {
+        c=1;
+    }
+    else
+    {
+        for(q;q>0;q--)
+        {
+            c=c*f;
+        }
+    }
+    printf("The answer is %d\n",c);
+    return 0;
+}
+
+Q7-
+#include <stdio.h>
+int main()
+{
+    int n1=0,n2=1,n3,count,num;
+
+    printf("Enter the first 10 numbers of fibonanci \n");
+    scanf("%d",&num);
+
+    printf("\n%d\n%d\n",n1,n2);
+
+    for(count-3;count<=num;count++)
+    {
+        n3=n1+n2;
+        printf("%d\n",n3);
+
+        n1 = n2;
+        n2 = n3;
+    }
+    return 0;
+}
+
+Q8-
+#include <stdio.h>
+int main()
+{
+    int n,arms=0,r,c;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    c=n;
+    while(n>0)
+    {
+        r=n%10;
+        arms=(r*r*r)+arms;
+        n=n/10;
+    }
+    if(c==arms)
+    printf("Armstrong Number\n");
+    else
+    printf("Not an Armstrong Number\n");
+
+    return 0;
+}
+
+Q9-
+#include <stdio.h>
+
+int main()
+{
+    int al;
+    printf("These are the ASCII values from A to Z.\n\n");
+    for(al=65;al<=90;al++)
+    {
+        printf("%d ",al);
+    }
+    return 0;
+}
+
+Q10-
+#include <stdio.h>
+
+int main()
+{
+        int a,r;
+    for(a=1;a<=5;a++)
+    {
+        for(r=1;r<=a;r++)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+
+    return 0;
+}
+
+Q11-
+#include <stdio.h>
+int main()
+{
+    int n,i,count=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==2)
+    printf("%d is a prime Number\n",n);
+    else
+    printf("%d is Not a prime Number\n",n);
+    return 0;
+}
+
+Q12-
+#include <stdio.h>
+int main()
+{
+    int g,total=0,r;
+    printf("Enter numbers : ");
+    scanf("%d",&g);
+    if(g==-1)
+    {
+        printf("\nThe total is %d",g);
+    }
+    else
+    {
+        for(r=0;r==0;)
+        {
+            total+=g;
+            scanf("%d",&g);
+            if(g==-1)
+            {
+                r=1;
+            }
+        }
+        printf("\nThe total is %d\n",total);
+    }
+    return 0;
+}
