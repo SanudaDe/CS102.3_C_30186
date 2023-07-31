@@ -1,0 +1,270 @@
+Question 1
+#include <stdio.h>
+int main()
+{
+int no01,no02;
+printf("Enter number 01 =");
+scanf("%d",&no01);
+printf("Enter number 02 =");
+scanf("%d",&no02);
+if(no01>no02)
+    printf("The number 01 is the highest");
+else
+    printf("The number 02 is the highest \n");
+}
+
+
+
+
+
+
+
+
+
+Question 2
+
+#include <stdio.h>
+int main()
+{
+int n01,n02,n03;
+printf("\n Enter number 01 =");
+scanf("%d",&n01);
+printf("Enter number 02 =");
+scanf("%d",&n02);
+printf("Enter number 03 =");
+scanf("%d",&n03);
+
+if(n01>n02&&n01>n03)
+    printf("The highest number is %d",n01);
+else if(n02>n01&&n02>n03)
+    printf("The highest number is %d",n02);
+else
+    printf("The highest number is %d \n\n",n03);
+
+}
+
+
+
+
+
+
+
+
+
+Question 03
+#include <stdio.h>
+int main()
+{
+    char name[30];
+    float bsal,nsal,inc;
+printf("Enter Employee name:");
+scanf("%s",&name);
+printf("Enter basic salary=");
+scanf("%f",&bsal);
+
+if(bsal>=10000)
+    inc=bsal*0.15;
+else if(5000<=bsal)
+    inc=bsal*0.10;
+else
+    inc=bsal*0.05;
+
+nsal=bsal+inc;
+
+printf("Employee name:%s\n",name);
+printf("New salary %.2f \n\n",nsal);
+
+}
+
+
+
+
+
+
+Question 4
+ #include <stdio.h>
+int main()
+{
+    float r,d,a,c;
+    float p=3.14159;
+printf("Enter the Radius of the circle = ");
+scanf("%f",&r);
+d=r*2;
+printf("The diameter is %f \n",d);
+a=p*(r*r);
+printf("The area of the circle = %f \n",a);
+c=2*p*r;
+printf("The circumference of the circle = %f \n ",c);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question 05
+#include <stdio.h>
+int main()
+{
+int num01,num02;
+printf("Enter number 01 =");
+scanf("%d",&num01);
+printf("Enter number 02 =");
+scanf("%d",&num02);
+
+if(num01%num02==0){
+    printf("yes it is a multiple");}
+    else {
+    printf("no its not a multiple");}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question 06
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a character among these: A,B,C,a,b,c,0,1,2,$,*,+,/ \n ");
+    scanf("%c",&ch);
+
+     if ('A'==ch)
+     printf("The integer value of A is %d\n",'A');
+     else if('B'==ch)
+     printf("The integer value of B is %d\n",'B');
+     else if('C'==ch)
+     printf("The integer value of C is %d\n",'C');
+     else if('a'==ch)
+     printf("The integer value of a is %d\n",'a');
+     else if('b'==ch)
+     printf("The integer value of b is %d\n",'b');
+     else if('c'==ch)
+     printf("The integer value of c is %d\n",'c');
+     else if('0'==ch)
+     printf("The integer value of 0 is %d\n",'0');
+     else if('1'==ch)
+     printf("The integer value of 1 is %d\n",'1');
+     else if('2'==ch)
+     printf("The integer value of 2 is %d\n",'2');
+     else if('$'==ch)
+     printf("The integer value of $ is %d\n",'$');
+     else if('*'==ch)
+     printf("The integer value of * is %d\n",'*');
+     else if('+'==ch)
+     printf("The integer value of + is %d\n",'+');
+     else if('/'==ch)
+     printf("The integer value of / is %d\n",'/');
+
+    return 0;
+}
+
+
+
+
+
+Question 07
+
+int main()
+{  
+    Float basicsalary,additionalallowance,bonus,monthlysales
+    ,grossremuneration;
+    int noofyears;
+    char city;
+
+    printf("Enter basic salary: ");
+    scanf("%f",&basicsalary);
+
+    printf("Enter the no of service: ");
+    scanf("%d",&noofyears);
+
+    printf("Enter the city ('c'= Colombo, 'O'= other): ");
+    scanf(" %c", &city);
+
+    printf("Enter the monthly sales: ");
+    scanf("%f",&monthlysales);
+
+    if(noofyears>5)
+        additionalallowance+=0.1*basicsalary;
+    if(city=='c')
+        additionalallowance+=2500;
+
+    monthlysales=0;
+    if(monthlysales>=50000)
+    bonus=monthlysales*0.15;
+    else if(monthlysales>=25000)
+    bonus=monthlysales*0.12;
+    else
+    bonus=monthlysales*0.10;
+
+
+ grossremuneration= basicsalary+additionalallowance+bonus;
+
+ printf("Gross Monthly Remuneration:  
+           %2f",grossremuneration);
+   
+ return 0;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question 07
+#include <stdio.h>
+int main()
+{
+  int yr;
+float salary;
+char r,c;
+ printf("Enter the salary= ");
+ scanf("%f",&salary);
+     printf("Enter the year of services= ");
+ scanf("%d",&yr);
+     printf("Enter the 'Colombo' if the city is colombo= ");
+ scanf("%s",&r);
+ if(salary<=25000){
+    salary=salary+(salary*10);}
+ else if(25000<=salary<=50000){
+  salary=salary+(salary*12);}
+ else{
+    salary=salary+(salary*15);}
+ if(yr>5){
+    salary=salary+(salary*10);
+ }
+ if(c==r)
+ {
+  salary=salary+2500;
+ } printf("The Gross Salary is= %.2f \n",salary);
+} 
