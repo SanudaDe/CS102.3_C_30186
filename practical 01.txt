@@ -1,0 +1,93 @@
+#include<stdio.h>
+int main()
+{
+//Q1
+printf(" Sanuda De Silva \n Isipthana college\n\n");
+
+//Q2
+printf("   *\n");
+printf("   **\n");
+printf("   ***\n");
+printf("   ****\n");
+printf("   *****\n\n\n");
+
+//Q3
+int inte;
+char chara;
+float floatt;
+double doubl ;
+
+
+printf(" Integer");
+scanf("%d",&inte);
+printf("\n");
+printf("Character");
+scanf("%d",&chara);
+printf("\n");
+printf("Float");
+scanf("%f",&floatt);
+printf("\n");
+printf("Double");
+scanf("%f",&doubl);
+printf("\n\n");
+printf("Display %d,%d,%f,%f",inte,chara,floatt,doubl);
+printf("\n\n");
+
+//Q4
+int number1,number2,total;
+printf("Enter number 1 ");
+scanf("%d",&number1);
+printf("Enter number 2");
+scanf("%d",&number2);
+
+total=(number1+number2);
+
+printf("Total=%d",total);
+printf("\n\n");
+
+
+//Q5
+float no1,no2,avg;
+
+printf("Enter a number");
+scanf("%f",&no1);
+printf("Enter a number");
+scanf("%f",&no2);
+
+avg=(no1+no2)/2;
+
+printf("Average=%float",avg);
+printf("\n\n");
+
+//Q6
+int age,byear;
+char name[10];
+
+printf("Enter name");
+scanf("%s",&name);
+printf("Enter birthday");
+scanf("%d",&byear);
+
+age=(2023-byear);
+
+printf("Name is %s",name);
+printf("\n");
+printf("Age is %d \n\n",age);
+scanf("");
+
+//Q7
+float num1,num2,swap;
+printf("Enter a number=");
+scanf("%f",&num1);
+printf("Enter another number=");
+scanf("%f",&num2);
+printf("Entered first number before swap= %.2f \n",num1);
+printf("Entered second number before swap= %.2f \n",num2);
+
+swap=num1;
+num1=num2;
+num2=swap;
+
+printf("Entered first number after swap= %.2f \n",num1);
+printf("Entered second number after swap= %.2f \n\n",num2);
+}
