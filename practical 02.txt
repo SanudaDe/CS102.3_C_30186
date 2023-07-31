@@ -1,0 +1,40 @@
+ 
+//Q1
+int age;
+printf("HI,HOW OLD ARE YOU?");
+scanf("%d",&age);
+printf("\n\n");
+printf("Welcome %d \n",age);
+printf("LET'S BE FRIENDS! \n\n");
+
+//Q2
+printf("%5d,%5d,%5d \n",2,4,8);
+printf("%5d,%5d,%5d \n",3,9,27);
+printf("%5d,%5d,%5d \n\n",4,16,64);
+
+
+//Q3
+int time,avg;
+float dis;
+printf("Enter the distance traveled by the car=");
+scanf("%f",&dis);
+printf("Enter the Time taken to arrive to the destination=");
+scanf("%d",&time);
+
+avg=dis/time;
+
+printf("The average distance traveled by the car= %d ms-1 \n\n",avg);
+
+//Q4
+int c,f;
+printf("Temperature in Degrees fahrenheit=");
+scanf("%d",&f);
+
+c=(5/9)*(f-32);
+
+printf("Temperature in Degree Celsius= %d",c);
+
+
+
+
+}
